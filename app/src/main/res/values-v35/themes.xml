@@ -2,5 +2,6 @@
 <resources>
 
     <style name="Theme.Androidbasicsharing1" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
     </style>
 </resources>
