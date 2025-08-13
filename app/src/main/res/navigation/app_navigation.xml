@@ -8,14 +8,24 @@
         android:id="@+id/blankFragment"
         android:name="com.him.mobile.android_basic_sharing_1.BlankFragment"
         android:label="fragment_blank"
-        tools:layout="@layout/fragment_blank" >
+        tools:layout="@layout/fragment_blank">
         <action
             android:id="@+id/action_blankFragment_to_blankFragment2"
             app:destination="@id/blankFragment2" />
     </fragment>
+
     <fragment
         android:id="@+id/blankFragment2"
         android:name="com.him.mobile.android_basic_sharing_1.BlankFragment2"
         android:label="fragment_blank2"
-        tools:layout="@layout/fragment_blank2" />
+        tools:layout="@layout/fragment_blank2" >
+        <argument
+            android:name="param1"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="param2"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
 </navigation>

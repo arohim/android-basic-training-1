@@ -36,7 +36,10 @@ class BlankFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.button.setOnClickListener {
-            val direction = BlankFragmentDirections.actionBlankFragmentToBlankFragment2()
+            val direction = BlankFragmentDirections.actionBlankFragmentToBlankFragment2(
+                param1 = binding.editTextText.text?.toString() ?: "",
+                param2 = "Param2"
+            )
             findNavController().navigate(direction)
         }
     }
