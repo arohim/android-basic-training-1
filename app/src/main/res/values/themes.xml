@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Androidbasicsharing1" parent="android:Theme.Material.Light.NoActionBar">
+    <style name="Theme.Androidbasicsharing1" parent="android:Theme.Material.Light.NoActionBar"></style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSizeCircle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
     </style>
 </resources>

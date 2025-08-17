@@ -38,7 +38,12 @@ class MainActivity : FragmentActivity() {
                     }
                     composable<SecondScreenEntry> { backstack ->
                         val args = backstack.toRoute<SecondScreenEntry>()
-                        SecondScreen(text = args.text)
+                        SecondScreen(
+                            text = args.text,
+                            onNavigateBack = {
+                                navController.navigateUp()
+                            }
+                        )
                     }
                 }
             }
